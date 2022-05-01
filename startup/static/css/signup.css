@@ -1,0 +1,98 @@
+body{
+    border: 0px;
+    padding: 0px;
+    background: gainsboro;
+}
+img{
+    position: fixed;
+    top:6.6%;
+    left:45%;
+    height: 87%;
+    width: 51%;
+}
+.signDiv{
+    position: fixed;
+    top : 6.6%;
+    left : 3%;
+    height: 87%;
+    width: 51%;
+    background-color: white;
+}
+#signLabel1{
+    position: absolute;
+    top : 8%;
+    left : 34%;
+    font-family: "Gill Sans MT",fantasy;
+    color: firebrick;
+    font-size: 25px;
+}
+.signForm{
+    position: absolute;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin-bottom: 6.5%;
+    height: 8%;
+    left: 15%;
+    width: 55%;
+}
+.signRadio{
+    position: absolute;
+    margin: 15px;
+    left : 10%;
+    top : 57px;
+    font-family: "Comic Sans MS";
+    font-size: 17px;
+}
+#signText1{
+    top : 18%;
+}
+#signText2{
+    top : 29%;
+}
+#signText3{
+    top : 40%;
+}
+#signLabel2{
+    top : 51%;
+    left: 13%;
+}
+#signRadio1{
+    top : 51%;
+    left : 30%;
+    height: 4%;
+    width: 5%;
+}
+#signLabel3{
+    top : 51%;
+    left: 36%;
+}
+#signRadio2{
+    top : 51%;
+    left : 50%;
+    height: 4%;
+    width: 5%;
+}
+#signLabel4{
+    top : 51%;
+    left: 56%;
+}
+#signText4{
+    top : 62%;
+}
+#signText5{
+    top : 73%;
+}
+#signSubmit{
+    position: absolute;
+    top : 86%;
+    left: 33%;
+    color: black;
+    background-color: white;
+    font-family: "Comic Sans MS",sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

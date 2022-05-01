@@ -1,0 +1,115 @@
+body{
+    padding: 0%;
+    background-color: ghostwhite;
+}
+.postDiv{
+    background-color: gainsboro;
+    position: absolute;
+    top : 11.6%;
+    left : 19%;
+    height: 85%;
+    width : 80%;
+}
+#manpic{
+    position: absolute;
+    height: 80%;
+    width: 13%;
+    top : 20%;
+    left : 2%;
+}
+.postFormText{
+    position: fixed;
+    border: none;
+    border-bottom: 2px solid black;
+    margin: 2%;
+    background-color: gainsboro;
+    font-family: "Gill Sans MT", fantasy;
+    color: black;
+    font-size: 15px;
+}
+#postText1{
+    top : 12%;
+    left : 20%;
+    height: 8%;
+    width: 30%;
+}
+#postText2{
+    top : 24%;
+    left : 20%;
+    height: 8%;
+    width: 30%;
+}
+#postText3{
+    top : 36%;
+    left : 20%;
+    height: 8%;
+    width: 30%;
+}
+#postText4{
+    top : 12%;
+    left : 58%;
+    height: 8%;
+    width: 30%;
+}
+#postText5{
+    top : 24%;
+    left : 58%;
+    height: 8%;
+    width: 30%;
+}
+#postText6{
+    top : 36%;
+    left : 58%;
+    height: 8%;
+    width: 30%;
+}
+#postText7{
+    top : 55%;
+    left : 20%;
+    height: 20%;
+    width: 70%;
+    text-align: center;
+}
+#postButton{
+    position: absolute;
+    border: 2px solid black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    top : 85%;
+    left: 47%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Comic Sans MS";
+}
+#postTopic{
+    position: absolute;
+    font-family: "Gill Sans MT", fantasy;
+    font-size: 30px;
+    color: firebrick;
+    top : 12%;
+    left : 1.4%;
+}
+.nav_div {
+    top : 0;
+    right : 0;
+    position : fixed;
+    background: gainsboro;
+    height : 10%;
+    width : 100%;
+}
+
+.navLabelEle{
+    position: relative;
+    color : black;
+    top : 30%;
+    left : 67%;
+    padding : 17px;
+    font-family: "Gill Sans MT",fantasy;
+    font-size: 15px;
+}
+.navLabelEle a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Edit Personal Profile</title>
+    <link rel = "stylesheet" type = "text/css" href = "{% static '/css/profile.css' %}">
+</head>
+<body>
+<nav class="navigation">
+    <div class="nav_div">
+        <label id="label1" class="navLabelEle"> <a href = "{% url 'startup:Home' %}"> Home </a> </label>
+        <label id="label2" class="navLabelEle"> <a href = "{% url 'startup:Post' %}"> Post </a></label>
+        <label id="label3" class="navLabelEle"> <a href = "{% url 'startup:CompanyProfile' %}"> CompanyProfile </a></label>
+        <label id="label4" class="navLabelEle"> <a href = "{% url 'startup:About' %}"> About </a></label>
+    </div>
+</nav>
+  <div class="profileDiv">
+    <form action="" method="post">
+        {% csrf_token %}
+        {% if request.user.is_authenticated %}
+            <label class="editProfileLabel" id="epLabel-1" for="epText-1">E-Mail</label>
+            <input class="editProfileText" id="epText-1" type="text" value="{{ request.user.email }}"><br>
+            <label class="editProfileLabel" id="epLabel-2" for="epText-2">Name</label>
+            <input class="editProfileText" id="epText-2" type="text" value="{{ request.user.Name }}"><br>
+            <label class="editProfileLabel" id="epLabel-3" for="epText-3">Mobile</label>
+            <input class="editProfileText" id="epText-3" type="text" value="{{ request.user.mobile }}"><br>
+            <label id="epRLabel-1" class="epRadio">Gender</label>
+
+            {% if request.user.gender == "Male" %}
+                <input type="radio" id="epR-1" class="epRadio" name="gender" value="Male" checked>
+                <label id="epRLabel-2" class="epRadio" for="epR-1">Male</label>
+                <input type="radio" id="epR-2" class="epRadio" name="gender" value="Female">
+                <label id="epRLabel-3" class="epRadio" for="epR-2">Female</label><br>
+            {% endif %}
+
+            {% if request.user.gender == "Female" %}
+                <input type="radio" id="epR-1" class="epRadio" name="gender" value="Male">
+                <label id="epRLabel-2" class="epRadio" for="epR-1">Male</label>
+                <input type="radio" id="epR-2" class="epRadio" name="gender" value="Female" checked>
+                <label id="epRLabel-3" class="epRadio" for="epR-2">Female</label><br>
+            {% endif %}
+
+            <label class="editProfileLabel" id="epLabel-4" for="epText-4">Password</label>
+            <input class="editProfileText" id="epText-4" type="password"><br>
+            <label class="editProfileLabel" id="epLabel-5" for="epText-5">Confirm Password</label>
+            <input class="editProfileText" id="epText-5" type="password"><br>
+            <input class="editProfileText" id="epSumbit" type="submit" Value = "Update Profile">
+
+        {% else %}
+            <H2>Improper sign in please again</H2>
+        {% endif %}
+    </form>
+  </div>
+  <label id="epTopic">Update Personal Profile</label>
+<img id="epimg" src="https://miro.medium.com/max/799/0*OAI2ScuvY282YHks.jpg",alt="icon">
+</body>
+</html>

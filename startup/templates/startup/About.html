@@ -1,0 +1,45 @@
+{% if request.user.is_authenticated %}
+    {% extends 'startup/LoginBase.html' %}
+
+{% else %}
+    {% extends 'startup/NonLoginBase.html' %}
+{% endif %}
+
+{% block staticResourses %}
+    {% load static %}
+    <link rel="stylesheet" type="/text/css" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<main>
+        <div class = "about">
+            <h1> About </h1>
+            <p>
+               Open innovation is key to the success of many companies. It is based on the intelligent
+                use of all possible resources, including collaborations with parties outside the firm.
+                Although it is well known that large companies foster and use startups as experiments
+                in their innovation process, little is known about similar activities with small and medium-sized enterprises .
+            </p>
+        </div>
+
+        <div class = "Vision">
+            <h1> Vision </h1>
+            <p>
+                Open innovation is key to the success of many companies. It is based on the intelligent
+                use of all possible resources, including collaborations with parties outside the firm.
+                Although it is well known that large companies foster and use startups as experiments
+                in their innovation process, little is known about similar activities with small and medium-sized enterprises .
+            </p>
+        </div>
+
+        <div class = "Mission">
+            <h1> Mission </h1>
+            <p>
+                Open innovation is key to the success of many companies. It is based on the intelligent
+                use of all possible resources, including collaborations with parties outside the firm.
+                Although it is well known that large companies foster and use startups as experiments
+                in their innovation process, little is known about similar activities with small and medium-sized enterprises .
+            </p>
+        </div>
+    </main>
+{% endblock %}

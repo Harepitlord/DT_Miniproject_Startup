@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title> Assembler </title>
+    {% block staticResourses %} {% endblock %}
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav_div">
+                        <label id="label1" class="navLabelEle"> <a href = "{% url 'startup:Home' %}"> Home </a> </label>
+            <label id="label2" class="navLabelEle"> <a href = "{% url 'startup:Post' %}"> Post </a></label>
+            <label id="label3" class="navLabelEle"> <a href = "{% url 'startup:CompanyProfile' %}"> CompanyProfile </a></label>
+            <label id="label4" class="navLabelEle"> <a href = "{% url 'startup:About' %}"> About </a></label>
+            <label id="label5" class="navLabelEle"> <a href = "{% url 'startup:Profile' %}"> Edit Profile </a></label>
+        </div>
+    </nav>
+    {% block content %}    {% endblock %}
+</body>
+</html>

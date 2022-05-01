@@ -1,0 +1,153 @@
+body {
+    margin : 0;
+    padding : 0;
+    font-family : "Gill Sans MT", fantasy;
+    font-size : 20px;
+    background-color : gainsboro;
+}
+
+.nav_div {
+    top : 0;
+    right : 0;
+    position : fixed;
+    background: white;
+    height : 11%;
+    width : 100%;
+}
+
+.navLabelEle {
+    color : black;
+    float : left;
+    padding : 2%;
+    font-family: "Gill Sans MT",fantasy;
+    font-size: 20px;
+}
+
+.navLabelEle a {
+    color : black;
+    text-decoration : none;
+}
+
+.search-bar input{
+    position : fixed;
+    top : 0.1%;
+    right : 5.7%;
+    width : 15%;
+    height : 4%;
+    border : 1px solid black;
+    margin : 1.6%;
+    border-radius : 10px;
+    text-align : center;
+    background-color : white;
+}
+
+#Go {
+    position: fixed;
+    border-radius: 10px;
+    width : 3%;
+    top : 0.1%;
+    right : 2%;
+    margin : 1.5%;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+}
+
+
+.news {
+    position : absolute;
+    top : 17%;
+    left : 75%;
+    width : 22%;
+    height : 78%;
+    background-color : white;
+    box-sizing: border-box;
+    border-radius : 10px;
+    overflow : scroll;
+    overflow-x : hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+#news-topic {
+    font-weight : bold;
+    color : brown;
+    position : absolute;
+    left : 38.8%;
+    top : 12px;
+}
+
+.news-content {
+    position : absolute;
+    border-bottom : 2px solid #000;
+    padding-top: 2px;
+    padding-bottom : 5px;
+    margin-bottom : 30px;
+    text-align : center;
+}
+
+#news1 {
+    position : relative;
+    top : 10%;
+}
+
+#news2 {
+    position : relative;
+    top : 10%;
+}
+
+#news3 {
+    position : relative;
+    top : 10%;
+}
+
+#news4 {
+    position : relative;
+    top : 10%;
+}
+
+#news5 {
+    position : relative;
+    top : 10%;
+}
+
+.feed {
+    position : absolute;
+    top : 17%;
+    left : 2%;
+    width : 69%;
+    height : 78%;
+    background-color : white;
+    box-sizing: border-box;
+    border-radius : 25px;
+}
+
+#feed-topic {
+    position : absolute;
+    top : 4%;
+    left : 48%;
+    font-size : 171%;
+    font-weight : bold;
+}
+
+#feed-content {
+    position : absolute;
+    left : 4%;
+    top : 27%;
+    border-bottom : 2px solid #000;
+    padding-bottom: 2%;
+    margin-bottom : 12%;
+}
+
+#feed-content-topic {
+    position : relative;
+    top : 17%;
+    left: 3%;
+    font-weight : bold;
+    font-size : 130%;
+    color : brown;
+}

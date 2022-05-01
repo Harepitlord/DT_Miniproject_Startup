@@ -1,0 +1,49 @@
+body{
+    padding : 0;
+    border : 0;
+    overflow: auto;
+}
+
+.nav_div {
+    top : 0;
+    right : 0;
+    position : fixed;
+    background: gainsboro;
+    height : 10%;
+    width : 100%;
+}
+
+.navLabelEle{
+    position: relative;
+    color : black;
+    top : 30%;
+    left : 67%;
+    padding : 17px;
+    font-family: "Gill Sans MT",fantasy;
+    font-size: 15px;
+}
+.navLabelEle a{
+    text-decoration: none;
+    color: black;
+}
+#hImg-1{
+    position: absolute;
+    height: 45%;
+    width: 30%;
+    top : 30%;
+    left : 2%;
+}
+#hImg-2{
+    position: absolute;
+    height: 40%;
+    width: 30%;
+    top : 70%;
+    left : 65%;
+}
+#hImg-3{
+    position: absolute;
+    height: 45%;
+    width: 35%;
+    top : 140%;
+    left : 5%;
+}

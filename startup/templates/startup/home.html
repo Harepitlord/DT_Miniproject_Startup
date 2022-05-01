@@ -1,0 +1,11 @@
+{% extends 'startup/NonLoginBase.html' %}
+{% block staticResources %}
+    {% load static %}
+    <link rel = "stylesheet" type = "text/css" href = "{% static '/css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<img id="hImg-1" src="https://cdn.dribbble.com/users/110372/screenshots/9173500/business_illustration_set_animation.png?compress=1&resize=400x300" alt="icon">
+<img  id="hImg-2" src="https://airdeck.co/wp-content/uploads/2021/08/online-presentation-illustration.jpg" alt="icon">
+<img id="hImg-3" src="https://i.pinimg.com/originals/ba/e6/68/bae6684d32164ad3c09d17a297b5f92f.jpg" alt="icon">
+{% endblock %}

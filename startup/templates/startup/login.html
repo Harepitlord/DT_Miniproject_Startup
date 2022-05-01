@@ -1,0 +1,33 @@
+{% extends 'startup/NonLoginBase.html' %}
+
+{% block staticResourses %}
+    {% load static %}
+    {% load myfilters %}
+    <link rel = "stylesheet" type = "text/css" href = "{% static '/css/login.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="loginDiv">
+        <label class="logLabel" id="logLabel1">Login</label>
+        <form method="post">
+            {% csrf_token %}
+{#            <input type="text" id="logText1" class="logText" name="userName" placeholder="E-mail">#}
+{#            <br>#}
+{#            <input type="password" id="logText2" class="logText" name="password" placeholder="Password">#}
+{#            <br>#}
+            {% for field in form %}
+                <div class="fieldWrapper">
+                    {{ field.errors }}
+                    {{ field | addCSSClass : "logText" }}
+                    {% if field.help_text %}
+                    <p class="help">{{ field.help_text|safe }}</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+            <input type="submit" id="logButton1" value="login">
+        </form>
+        <label id="logLabel2">Don't have an account?</label>
+        <label id="logLabel3"> Sign Up</label>
+    </div>
+    <img src="https://www.allen.ac.in/apps2223/assets/images/login.jpg" alt = "icon">
+{% endblock %}

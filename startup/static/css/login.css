@@ -1,0 +1,68 @@
+body{
+    padding: 0;
+    background: gainsboro;
+}
+.loginDiv
+{
+    position: fixed;
+    top : 10%;
+    background: white;
+    left : 10%;
+    height: 82%;
+    width : 50%;
+}
+img{
+    position: fixed;
+    height: 82%;
+    width: 40%;
+    top: 10%;
+    left: 50%;
+}
+#logLabel1
+{
+    position: relative;
+    left: 37%;
+    top : 13%;
+    font-family: "Gill Sans MT", fantasy;
+    font-size: 30px;
+    color: firebrick;
+}
+.logText
+{
+    position: absolute;
+    left : 20%;
+    border: none;
+    border-bottom: 2px solid grey;
+    width : 45%;
+    height: 7%;
+}
+#logText1{
+    top : 30%;
+}
+#logText2{
+    top : 50%;
+}
+#logButton1{
+    position: absolute;
+    top : 68%;
+    left : 37%;
+    border-radius: 15px ;
+    color: black;
+    background: white;
+    font-size: 20px;
+    font-family: "Comic Sans MS";
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#logLabel2{
+    position: relative;
+    top: 69%;
+    left : 30%;
+}
+#logLabel3{
+    position: relative;
+    top:69%;
+    left: 31%;
+}

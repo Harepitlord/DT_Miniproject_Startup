@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" type="/text/css" href="{% static 'css/about.css' %}">
+    <title> Assembler </title>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav_div">
+        {% if request.user.is_authenticated %}
+            <label id="label1" class="navLabelEle"> <a href = "{% url 'startup:Home' %}"> Home </a> </label>
+            <label id="label2" class="navLabelEle"> <a href = "{% url 'startup:Post' %}"> Post </a></label>
+            <label id="label3" class="navLabelEle"> <a href = "{% url 'startup:CompanyProfile' %}"> CompanyProfile </a></label>
+            <label id="label4" class="navLabelEle"> <a href = "{% url 'startup:About' %}"> About </a></label>
+            <label id="label5" class="navLabelEle"> <a href = "{% url 'startup:Profile' %}"> Edit Profile </a></label>
+        {% else %}
+            <label id="label1" class="navLabelEle"><a href="{% url 'startup:HomePage' %}">Home</a></label>
+            <label id="label2" class="navLabelEle"><a href="{% url 'login' %}">Login</a></label>
+            <label id="label3" class="navLabelEle"><a href="{% url 'startup:Signup' %}">Sign Up</a></label>
+            <label id="label4" class="navLabelEle"><a href="{% url 'startup:About' %}">About</a></label>
+
+        {% endif %}
+        </div>
+    </nav>
+    <main>
+        <div class = "about">
+            <h1> About </h1>
+            <p>
+               Open innovation is key to the success of many companies. It is based on the intelligent
+                use of all possible resources, including collaborations with parties outside the firm.
+                Although it is well known that large companies foster and use startups as experiments
+                in their innovation process, little is known about similar activities with small and medium-sized enterprises .
+            </p>
+        </div>
+        
+        <div class = "Vision">
+            <h1> Vision </h1>
+            <p>
+                Open innovation is key to the success of many companies. It is based on the intelligent
+                use of all possible resources, including collaborations with parties outside the firm.
+                Although it is well known that large companies foster and use startups as experiments
+                in their innovation process, little is known about similar activities with small and medium-sized enterprises .
+            </p>
+        </div>
+        
+        <div class = "Mission">
+            <h1> Mission </h1>
+            <p>
+                Open innovation is key to the success of many companies. It is based on the intelligent
+                use of all possible resources, including collaborations with parties outside the firm.
+                Although it is well known that large companies foster and use startups as experiments
+                in their innovation process, little is known about similar activities with small and medium-sized enterprises .
+            </p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body{
+    padding: 0%;
+    background-color: gainsboro;
+}
+.profileDiv{
+    position: absolute;
+    top : 14%;
+    left : 6%;
+    height: 80%;
+    width: 50%;
+    background-color: white;
+}
+#epimg{
+    position: absolute;
+    top : 14%;
+    left:45%;
+    height: 80%;
+    width: 50%;
+}
+.editProfileLabel {
+    position: absolute;
+    font-family: "Gill Sans MT", fantasy;
+    font-size: 15px;
+    color: black;
+}
+.editProfileText,.epRadio{
+    position: absolute;
+    font-family: "Gill Sans MT", fantasy;
+    height: 5%;
+    width : 35%;
+    font-size: 15px;
+}
+
+#epLabel-1{
+    top : 21%;
+    left : 8%
+}
+#epLabel-2{
+    top : 31%;
+    left : 8%
+}
+#epLabel-3{
+    top : 41%;
+    left : 8%
+}
+#epRLabel-1{
+    top : 50%;
+    left : 8%
+}
+#epLabel-4{
+    top : 61%;
+    left : 8%
+}
+#epLabel-5{
+    top : 71%;
+    left : 8%
+}
+#epText-1{
+    top : 20%;
+    left : 35%;
+}
+#epText-2{
+    top : 30%;
+    left : 35%;
+}
+#epText-3{
+    top : 40%;
+    left : 35%;
+}
+#epR-1{
+    top : 50%;
+    left : 35%;
+    height: 4%;
+    width: 4%;
+}
+#epRLabel-2
+{
+    top : 50%;
+    left: 43%;
+}
+#epR-2{
+    top : 50%;
+    left: 53%;
+    height: 4%;
+    width: 4%;
+}
+#epRLabel-3{
+    top: 50%;
+    left: 60%;
+}
+#epText-4{
+    top : 60%;
+    left : 35%;
+}
+#epText-5{
+    top : 70%;
+    left : 35%;
+}
+#epSumbit{
+    top : 85%;
+    left : 27%;
+    height: 7%;
+    border-radius: 10px;
+}
+#epTopic{
+    position:absolute;
+    top: 19%;
+    left : 18%;
+    font-size: 20px;
+    font-family: "Gill Sans MT", fantasy;
+    color: firebrick;
+}
+.nav_div {
+    top : 0;
+    right : 0;
+    position : fixed;
+    background: white;
+    height : 10%;
+    width : 100%;
+}
+
+.navLabelEle{
+    position: relative;
+    color : black;
+    top : 30%;
+    left : 67%;
+    padding : 17px;
+    font-family: "Gill Sans MT",fantasy;
+    font-size: 15px;
+}
+.navLabelEle a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title> Main page </title>
+    <link rel = "stylesheet" type = "text/css" href = "{% static '/css/main.css' %}">
+</head>
+<body>
+
+<nav class="navigation">
+    <div class="nav_div">
+        <label id="label1" class="navLabelEle"> <a href = "{% url 'startup:Home' %}"> Home </a> </label>
+        <label id="label2" class="navLabelEle"> <a href = "{% url 'startup:Post' %}"> Post </a></label>
+        <label id="label3" class="navLabelEle"> <a href = "{% url 'startup:CompanyProfile' %}"> CompanyProfile </a></label>
+        <label id="label4" class="navLabelEle"> <a href = "{% url 'startup:About' %}"> About </a></label>
+        <label id="label5" class="navLabelEle"> <a href = "{% url 'startup:Profile' %}"> Edit Profile </a></label>
+    </div>
+</nav>
+<div class="mainDiv1"> </div>
+
+<form class = "search-bar">
+
+    <input type = "text" name = "search" placeholder = "Type here">
+    <button id = "Go"> Go </button>
+</form>
+
+<div class = "news">
+    <label id = "news-topic"> NEWS </label>
+    <!--<label class = "news-content"> -->
+    <a href = "https://www.pymnts.com/spac/2021/amex-global-busniess-travel-go-public-spac-deal/"> <p id = "news1" class = "news-content"> Amex Global Business Travel to Go Public in SPAC Deal </p> </a>
+    <a href = "https://www.outlookindia.com/newsscroll/citi-to-exit-consumer-banking-busniess-in-india/2065333"> <p id = "news2" class = "news-content"> Citi to exit consumer banking busniess in India </p> </a>
+    <a href = "https://indianexpress.com/article/business/tafe-cmd-to-head-public-enterprises-selection-board-7255194/"> <p id = "news3" class = "news-content"> TAFE CMD to head Public Enterprises Selection Board </p> </a>
+    <a href = "https://www.buffalobills.com/news/josh-norman-buffalo-busniess-blitz-distribute-500-000-to-local-businesses"> <p id = "news4" class = "news-content"> A champion for Buffalo | Josh Norman distributes $500,000 to local businesses </p> </a>
+    <a href = "https://indianexpress.com/article/india/ease-of-doing-busniess-rankings-hp-jumps-9-places-now-in-top-10-6584828/"> <p id = "news5" class = "news-content"> Ease of doing business: HP jumps 9 places, now in top 10 </p> </a>
+</div>
+
+<div class = "feed">
+    <label id = "feed-topic"> Feed </label>
+    <label id = "feed-content-topic"> ROBERT DOWNEY JR </label>
+    <label id = "feed-content">
+        Robert John Downey Jr. (born April 4, 1965) is an American actor and producer.
+        His career has been characterized by critical and popular success in his youth
+    </label>
+</div>
+</body>
+</html>

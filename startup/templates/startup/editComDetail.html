@@ -1,0 +1,42 @@
+{% extends 'startup/LoginBase.html' %}
+
+
+{% block staticResourses %}
+    {% load static %}
+    {% load myfilters %}
+    <link rel = "stylesheet" type = "text/css" href = "{% static '/css/editComDetail.css' %}">
+{% endblock %}
+
+{% block content %}
+    <b id="EODTopic">Update Organisation Details</b>
+    <div class="EODDiv">
+      <form class = "EODform" method="post">
+{#        <label class="EODlab" id="EODlabel-1" for="EODText1">Company E-Mail</label>#}
+{#        <input  class ="EODFormText" id="EODText1" type = "text" readonly value="xyz@skcet.ac.in"><br>#}
+{#        <label class="EODlab" id="EODlabel-2" for="EODText2">Company Name</label>#}
+{#        <input class="EODFormText" id="EODText2" type="text"><br>#}
+{#        <label class="EODlab" id="EODlabel-3" for="EODText3">Location</label>#}
+{#        <input class="EODFormText" id="EODText3" type="text"><br>#}
+{#        <label class="EODlab" id="EODlabel-4" for="EODText4">CEO's Name</label>#}
+{#        <input class="EODFormText" id="EODText4" type="text"><br>#}
+{#        <label class="EODlab" id="EODlabel-5" for="EODText5">Domain</label>#}
+{#        <input class="EODFormText" id="EODText5" type="text"><br>#}
+{#        <label class="EODlab" id="EODlabel-6" for="EODText6">Reward</label>#}
+{#        <input class="EODFormText" id="EODText6" type="text"><br>#}
+{#        <label class="EODlab" id="EODlabel-7" for="EODText7">Query Description</label>#}
+{#        <input class="EODFormText" id="EODText7" type="text">#}
+{#        <input type="submit" id="EODButton" value="Update Details">#}
+
+          {% for field in form %}
+              <div class="fieldWrapper">
+                  {{ field.errors }}
+                  {{ field.label_tag | addCSSClass : "EODlab" }}
+                  {{ field | addCSSClass : "EODFormText" }}
+                  {% if field.help_text %}
+                  <p class="help">{{ field.help_text|safe }}</p>
+                  {% endif %}
+              </div>
+          {% endfor %}
+      </form>
+    </div>
+{% endblock %}

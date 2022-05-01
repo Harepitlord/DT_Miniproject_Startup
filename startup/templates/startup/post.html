@@ -1,0 +1,42 @@
+{% extends 'startup/LoginBase.html' %}
+
+{% block staticResourses %}
+    {% load static %}
+    {% load myfilters %}
+    <link rel = "stylesheet" type = "text/css" href = "{% static '/css/post.css' %}">
+{% endblock %}
+
+{% block content %}
+    <label id="postTopic">Post Your Mind</label>
+    <div class="postDiv">
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <form class = "postform" method="post">
+            {% csrf_token %}
+{#            <input  class ="postFormText" id="postText1" type = "text" placeholder="Company Name"><br>#}
+{#            <input class="postFormText" id="postText2" type="text" placeholder="Company E-Mail "><br>#}
+{#            <input class="postFormText" id="postText3" type="text" placeholder="Location"><br>#}
+{#            <input class="postFormText" id="postText4" type="text" placeholder="CEO's Name"><br>#}
+{#            <input class="postFormText" id="postText5" type="text" placeholder="Domain"><br>#}
+{#            <input class="postFormText" id="postText6" type="text" placeholder="Reward"><br>#}
+{#            <input class="postFormText" id="postText7" type="text" placeholder="Post Your Mind">#}
+{#            <input type="submit" id="postButton" value="Post">#}
+
+            {% for field in form %}
+            <div class="fieldWrapper">
+                {{ field.errors }}
+                {{ field }}
+                {% if field.help_text %}
+                    <p class="help">{{ field.help_text|safe }}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+        </form>
+    </div>
+  <img id="manpic" src="https://www.kindpng.com/picc/m/77-770659_business-people-character-vector-male-cartoon-clipart-male.png" alt="Image Error">
+{% endblock %}
